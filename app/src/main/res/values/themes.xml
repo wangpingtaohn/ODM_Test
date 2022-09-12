@@ -1,0 +1,7 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.AgingTest" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:textSize">16sp</item>
+        <item name="android:logo">@android:color/transparent</item>
+    </style>
+</resources>

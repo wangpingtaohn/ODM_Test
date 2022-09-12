@@ -1,0 +1,47 @@
+[
+  {
+    "id": "Wifi",
+    "name": "Wifi",
+    "type": 0,
+    "time": 20,
+    "params": [
+      {
+        "key": "wifi_ssid",
+        "name": "wifi名称",
+        "desc": ""
+      },
+      {
+        "key": "wifi_pass",
+        "name": "wifi密码",
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id":"Restart",
+    "name": "重启",
+    "type": 0,
+    "time": 20,
+    "params": [
+      {
+        "key": "restart_time",
+        "name": "开机后延时间隔",
+        "desc": ""
+      }
+    ]
+  }
+,
+  {
+    "id":"Storage",
+    "name": "存储测试",
+    "type": 0,
+    "time": 5,
+    "params": [
+      {
+        "key": "storageKey",
+        "name": "storageName",
+        "desc": ""
+      }
+    ]
+  }
+]

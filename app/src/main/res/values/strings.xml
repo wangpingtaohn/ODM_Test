@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AgingTest</string>
+    <string name="btn_start_test">开始测试</string>
+    <string name="btn_stop_test">结束测试</string>
+</resources>
