@@ -1,3 +1,4 @@
+/*
 package com.sunmi.aging.items;
 
 import android.app.ActivityManager;
@@ -25,7 +26,9 @@ import org.openni.VideoMode;
 import org.openni.VideoStream;
 import org.openni.android.OpenNIHelper;
 
-/* loaded from: CameraTest.class */
+*/
+/* loaded from: CameraTest.class *//*
+
 public class CameraTest extends TestItemBase {
     private int TestTime;
     int count;
@@ -133,4 +136,4 @@ public class CameraTest extends TestItemBase {
         this.mHandler.removeCallbacks(this.mRunnable);
         postSuccess();
     }
-}
+}*/

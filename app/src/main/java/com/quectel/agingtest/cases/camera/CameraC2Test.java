@@ -1,4 +1,5 @@
-package com.quectel.agingtest.camera;
+/*
+package com.quectel.agingtest.cases.camera;
 
 import android.app.Activity;
 import android.content.Context;
@@ -19,14 +20,17 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.Toast;
+
 import com.sunmi.aging.BuildConfig;
 import com.sunmi.aging.R;
 import com.sunmi.aging.TestItemBase;
 import com.sunmi.aging.libs.OpenGLView;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeoutException;
+
 import org.openni.Device;
 import org.openni.DeviceInfo;
 import org.openni.OpenNI;
@@ -36,7 +40,9 @@ import org.openni.VideoMode;
 import org.openni.VideoStream;
 import org.openni.android.OpenNIHelper;
 
-/* loaded from: CameraC2Test.class */
+*/
+/* loaded from: CameraC2Test.class *//*
+
 public class CameraC2Test extends TestItemBase implements SurfaceHolder.Callback, OpenNIHelper.DeviceOpenListener {
     int count;
     private Context mContext;
@@ -120,7 +126,9 @@ public class CameraC2Test extends TestItemBase implements SurfaceHolder.Callback
         }
     };
 
-    /* loaded from: CameraC2Test$AutoFocusCallback.class */
+    */
+/* loaded from: CameraC2Test$AutoFocusCallback.class *//*
+
     public final class AutoFocusCallback implements Camera.AutoFocusCallback {
         public AutoFocusCallback() {
         }
@@ -213,7 +221,9 @@ public class CameraC2Test extends TestItemBase implements SurfaceHolder.Callback
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    */
+/* JADX INFO: Access modifiers changed from: private *//*
+
     public void takePicture() {
         Camera camera = this.mCamera;
         if (camera != null) {
@@ -437,4 +447,4 @@ public class CameraC2Test extends TestItemBase implements SurfaceHolder.Callback
             Toast.makeText(activity, obj + BuildConfig.FLAVOR, 0).show();
         }
     }
-}
+}*/

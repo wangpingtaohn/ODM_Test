@@ -35,11 +35,24 @@
     "id":"Storage",
     "name": "存储测试",
     "type": 0,
-    "time": 5,
+    "time": 20,
     "params": [
       {
         "key": "storageKey",
         "name": "storageName",
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id":"Audio",
+    "name": "Audio测试",
+    "type": 0,
+    "time": 3,
+    "params": [
+      {
+        "key": "AudioKey",
+        "name": "AudioName",
         "desc": ""
       }
     ]

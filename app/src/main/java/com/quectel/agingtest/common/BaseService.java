@@ -206,7 +206,7 @@ public abstract class BaseService extends Service {
     }
 
     protected ServiceConfig getServiceConfig() {
-        return null;
+        return DF;
     }
 
     protected final void updateCaseResultAsync(boolean res) {

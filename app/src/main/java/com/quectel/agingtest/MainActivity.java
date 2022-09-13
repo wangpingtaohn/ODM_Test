@@ -99,10 +99,15 @@ public class MainActivity extends Activity {
     String[] permissions = new String[]{
             Manifest.permission.WRITE_EXTERNAL_STORAGE,
             Manifest.permission.READ_EXTERNAL_STORAGE,
+            Manifest.permission.RECORD_AUDIO,
     };
     private void checkPermission(){
-        int result = ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE);
-        if (result != PackageManager.PERMISSION_GRANTED){
+        int storageResult = ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE);
+        if (storageResult != PackageManager.PERMISSION_GRANTED){
+            ActivityCompat.requestPermissions(this, permissions,9);
+        }
+        int audioResult = ContextCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO);
+        if (audioResult != PackageManager.PERMISSION_GRANTED){
             ActivityCompat.requestPermissions(this, permissions,9);
         }
     }
