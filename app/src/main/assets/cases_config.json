@@ -48,7 +48,7 @@
     "id":"Audio",
     "name": "Audio测试",
     "type": 0,
-    "time": 3,
+    "time": 1,
     "params": [
       {
         "key": "AudioKey",

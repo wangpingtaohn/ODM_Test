@@ -39,7 +39,6 @@
         <service android:name=".cases.storage.StorageService" />
         <service android:name=".cases.restart.RestartService" />
         <service android:name=".cases.audio.AudioService" />
-        <service android:name=".cases.audio.SpeakerService" />
 
         <receiver
             android:name=".common.AgingReceiver"

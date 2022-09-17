@@ -19,33 +19,20 @@ public class AudioService extends BaseService {
 
     @Override
     public boolean runCases(int time) {
+        if (time > 1){
+            return false;
+        }
         if (audioRecordTool == null){
-            getServiceConfig().firstInterval = 5000;
-            getServiceConfig().loopInterval = 5000;
             audioRecordTool = new AudioRecordTool();
             audioRecordTool.createAudioRecord();
-        }else {
-            audioRecordTool.stop();
         }
         Log.d("===wpt===","firstInterval=" + getServiceConfig().firstInterval + ",loopInterval="+ getServiceConfig().loopInterval
         + ",audioRecordTool=" + audioRecordTool);
         try {
             audioRecordTool.start();
-            /*mHandler.postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    audioRecordTool.stop();
-                }
-            },5 * 1000);*/
+            mHandler.postDelayed(() -> audioRecordTool.stop(),6 * 1000);
         } catch (Exception e){
             return false;
-        }
-        if (getTotalTime() == time){
-            try {
-                Thread.sleep(2000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
         }
         return true;
     }

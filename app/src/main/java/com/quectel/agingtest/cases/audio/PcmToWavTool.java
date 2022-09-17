@@ -73,9 +73,9 @@ public class PcmToWavTool {
             in.close();
             out.close();
             File inFile = new File(inFilename);
-            /*if (inFile.exists()){
+            if (inFile.exists()){
                 inFile.delete();
-            }*/
+            }
 
         } catch (IOException e) {
             e.printStackTrace();

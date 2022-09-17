@@ -83,8 +83,8 @@ public class AudioRecordTool{
             //调用stop()方法停止录制
             audioRecord.stop();
             //调用release() 释放本机录音资源。
-//            audioRecord.release();
-//            audioRecord = null;
+            audioRecord.release();
+            audioRecord = null;
         }
         //利用自定义工具类将pcm格式的文件转换为wav格式文件才能进行播放
         for (String fileName: pcmList){
